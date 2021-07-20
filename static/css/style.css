@@ -1,0 +1,178 @@
+/* Colours
+
+### Primary
+
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)
+
+*/
+
+/* reset template adapted from https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274400#overview & https://www.linkedin.com/learning/css-advanced-layouts-with-grid */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: hsl(245, 6%, 54%);
+  background-color: hsl(26, 100%, 99%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Fraunces, serif;
+  color: hsl(214, 24%, 19%);
+  clear: both;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  display: inline-block;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  color: #ddca7e;
+  background: #282c34;
+  padding: .5em .8em;
+  border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+small {
+  font-size: 75%;
+}
+
+big {
+  font-size: 125%;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Global styles */
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 1em 0;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+.header {
+  height: 80vh;
+  background-image: url(../images/image-header.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.heading-slogan {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: .35rem;
+  padding-top: 31.5%;
+  line-height: 1.25;
+}
+
+.arrow-box {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
