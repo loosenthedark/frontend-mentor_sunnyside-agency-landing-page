@@ -150,6 +150,42 @@ img {
   height: auto;
 }
 
+/* Navbar */
+
+.navbar {
+  background-color: hsl(200, 100%, 62%);
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  padding: 1.75rem 1.25rem;
+  position: relative;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.logo {
+  width: 7.5rem;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.25rem;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.75rem;
+  height: 1.25rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(200, 100%, 62%);
+}
+
 /* Header */
 
 .header {
