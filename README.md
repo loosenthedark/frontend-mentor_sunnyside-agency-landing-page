@@ -8,7 +8,11 @@ Scroll offset fixed navbar workaround: https://stackoverflow.com/questions/40861
 
 ['Hey, what about the figure element?'](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#hey-what-about-the-figure-element) from [this CSS Tricks article](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/) was used as a reference point in order to follow semantic HTML best practices when coding the 'Client Testimonials' sections of the site
 
-https://tinyjpg.com/
+[W3Schools HTML Colour Picker](https://www.w3schools.com/colors/colors_picker.asp)
+
+[Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html)
+
+[TinyJPG (online image compression tool)](https://tinyjpg.com/)
 
 # Frontend Mentor - Sunnyside agency landing page solution
 

@@ -32,11 +32,11 @@ Accessibility: taken from https://www.linkedin.com/learning/css-advanced-layouts
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: hsl(0, 0%, 95%);
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: hsl(199, 65%, 37%);
   display: block;
   font-size: 14px;
   font-weight: bold;
@@ -92,7 +92,10 @@ i {
 }
 
 blockquote {
-  margin: 0 1.5em;
+  margin: 0 1.66rem;
+  line-height: 1.8;
+  margin-bottom: 1.125rem;
+  font-size: 1.1rem;
 }
 
 address {
@@ -102,8 +105,8 @@ address {
 pre {
   display: inline-block;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  color: #ddca7e;
-  background: #282c34;
+  color: hsl(48, 58%, 68%);
+  background: hsl(220, 13%, 18%);
   padding: .5em .8em;
   border-radius: .2em;
 }
@@ -123,7 +126,7 @@ acronym {
 
 mark,
 ins {
-  background: #fff9c0;
+  background: hsl(54, 100%, 88%);
   text-decoration: none;
 }
 
@@ -159,7 +162,8 @@ figure {
 /* Global styles */
 
 h1,
-h3 {
+h3,
+h4 {
   text-align: center;
   padding: 1em 0;
   margin: 0;
@@ -173,7 +177,32 @@ h3 {
   font-size: 1.75rem;
 }
 
-h2, h3 {
+h4 {
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  font-weight: 900;
+  font-size: .975rem;
+  margin-top: 3.75rem;
+  padding-bottom: 1.5rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  letter-spacing: .0175rem;
+}
+
+h4,
+h6 {
+  color: hsl(260, 5%, 65%);
+}
+
+h6 {
+  font-size: .9rem;
+}
+
+h2,
+h3,
+h5 {
   font-weight: 900;
   line-height: 1.15;
   padding: 1rem 0 1.33rem;
@@ -203,9 +232,9 @@ img:not(.profiler, .logo) {
 :target::before {
   content: "";
   display: block;
-  height: 4.75rem;
+  height: 4.15rem;
   /* fixed header height*/
-  margin: -4.75rem 0 0;
+  margin: -4.15rem 0 0;
   /* negative fixed header height */
 }
 
@@ -233,7 +262,7 @@ img:not(.profiler, .logo) {
   background-color: hsl(200, 100%, 62%);
   width: 100%;
   color: hsl(0, 0%, 100%);
-  padding: 1.75rem 1.25rem;
+  padding: 1.375rem 1.25rem;
   position: relative;
 }
 
@@ -243,6 +272,7 @@ img:not(.profiler, .logo) {
   right: 0;
   left: 0;
   z-index: 1030;
+  height: 4.25rem;
 }
 
 .logo {
@@ -251,7 +281,7 @@ img:not(.profiler, .logo) {
 
 .navbar-toggler {
   position: absolute;
-  top: 1.75rem;
+  top: 1.5rem;
   right: 1.25rem;
   border: none;
 }
@@ -271,23 +301,26 @@ img:not(.profiler, .logo) {
 .triangle-left {
   border-top: 1.5rem solid transparent;
   border-bottom: 1.5rem solid transparent;
-  border-right: 1.5rem solid hsl(26, 100%, 99%);
+  border-right: 1.5rem solid hsl(0, 0%, 96%);
   position: absolute;
-  top: 4.475rem;
+  top: 2.9rem;
   left: calc(100% + 88.25vw);
 }
 
 .navbar-nav {
   list-style-type: none;
-  background-color: hsl(26, 100%, 99%);
+  background-color: hsl(0, 0%, 96%);
   text-align: center;
-  padding: 1rem .5rem 1.5rem;
+  padding: 2rem .5rem 1.5rem;
   position: absolute;
-  top: 6rem;
-  height: 44vh;
+  top: 4.25rem;
+  height: 48vh;
   left: 100%;
   display: block;
   width: calc(100% - 2.5rem);
+  box-shadow: 0 .25rem .25rem .25rem rgba(164, 161, 170, .25);
+  -webkit-box-shadow: 0 .25rem .25rem .25rem rgba(164, 161, 170, .25);
+  -moz-box-shadow: 0 .25rem .25rem .25rem rgba(164, 161, 170, .25);
 }
 
 .triangle-left,
@@ -405,7 +438,7 @@ header {
 }
 
 .services-section-image {
-  height: calc(100vh - 4.75rem);
+  height: calc(100vh - 4.15rem);
   background-size: cover;
   background-position: center;
 }
@@ -441,10 +474,14 @@ header {
   color: hsl(198, 62%, 26%);
 }
 
-/* Clients section */
+/* Client Testimonials section */
+
+#clients {
+  padding-bottom: 2.75rem;
+}
 
 figure {
-  height: 54vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,10 +491,40 @@ figure {
 
 .profiler {
   border-radius: 50%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
 }
 
-blockquote {
-  line-height: 1.9;
-  margin-bottom: 1.5rem;
+.client {
+  padding-bottom: .75rem;
+}
+
+/* Image gallery */
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-section {
+  width: 50vw;
+  height: 50vw;
+  max-height: 15rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-section:first-of-type {
+  background-image: url(../images/image-gallery-milkbottles.jpg);
+}
+
+.gallery-section:nth-of-type(2) {
+  background-image: url(../images/image-gallery-orange.jpg);
+}
+
+.gallery-section:nth-of-type(3) {
+  background-image: url(../images/image-gallery-cone.jpg);
+}
+
+.gallery-section:nth-of-type(4) {
+  background-image: url(../images/image-gallery-sugar-cubes.jpg);
 }
