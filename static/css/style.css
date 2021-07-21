@@ -18,7 +18,42 @@
 
 */
 
-/* reset template adapted from https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274400#overview & https://www.linkedin.com/learning/css-advanced-layouts-with-grid */
+/*--------------------------------------------------------------
+Accessibility: taken from https://www.linkedin.com/learning/css-advanced-layouts-with-grid
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/* CSS reset template adapted from https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274400#overview & https://www.linkedin.com/learning/css-advanced-layouts-with-grid */
 
 * {
   margin: 0;
@@ -150,6 +185,24 @@ img {
   height: auto;
 }
 
+/* Buttons */
+
+.btn {
+  padding: 1rem 1.85rem;
+  text-transform: uppercase;
+  font-family: Fraunces, serif;
+  color: hsl(214, 24%, 19%);
+  font-size: .95rem;
+  border-radius: 5rem;
+  font-weight: 900;
+  letter-spacing: -.0125rem;
+}
+
+.btn-contact {
+  background-color: hsl(51, 100%, 49%);
+  color: hsl(214, 24%, 19%);
+}
+
 /* Navbar */
 
 .navbar {
@@ -182,14 +235,69 @@ img {
 .navbar-toggler-icon {
   width: 1.75rem;
   height: 1.25rem;
-  color: hsl(0, 0%, 100%);
+  color: hsl(26, 100%, 99%);
   background-color: hsl(200, 100%, 62%);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+}
+
+.arrow-left {
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent; 
+  border-right: 1.5rem solid hsl(26, 100%, 99%);
+  position: relative;
+  top: 1.275rem;
+  left: calc(100% + 83vw);
+}
+
+.navbar-nav {
+  list-style-type: none;
+  background-color: hsl(26, 100%, 99%);
+  text-align: center;
+  padding: 1rem .5rem 1.5rem;
+  position: absolute;
+  top: 6rem;
+  height: 44vh;
+  left: 100%;
+  display: block;
+  width: calc(100% - 2.5rem);
+}
+
+.arrow-left, .navbar-nav {
+  transition: all .25s;
+}
+
+.navbar-nav.show {
+  left: 1.25rem;
+}
+
+.arrow-left.show {
+  left: 83vw;
+}
+
+.nav-item:not(.nav-item-contact) {
+  margin: 1.625rem 0;
+}
+
+.nav-item-contact {
+  margin: 2.25rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:not(.btn) {
+  color: hsl(260, 5%, 65%);
 }
 
 /* Header */
 
 .header {
-  height: 80vh;
+  height: 77.5vh;
   background-image: url(../images/image-header.jpg);
   background-size: cover;
   background-position: bottom;

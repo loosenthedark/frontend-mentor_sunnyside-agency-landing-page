@@ -32,29 +32,33 @@
 <body class='grid-body'>
 
   <nav class="navbar fixed-top">
-    <button class="navbar-toggler navbar-toggler-right collapsed" id="nav-toggler" type="button"
-      data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <img class="navbar-toggler-icon" src="./static/images/icons/icon-hamburger.svg" alt="hamburger navbar toggler icon">
+    <button class="navbar-toggler" id="nav-toggler" type="button" aria-expanded="false"><span
+        class="screen-reader-text">Reveal menu</span>
+      <img class="navbar-toggler-icon" src="./static/images/icons/icon-hamburger.svg"
+        alt="hamburger navbar toggler icon">
     </button>
 
     <a class="navbar-logo" href="#">
       <img class="logo" src="./static/images/logo.svg" alt="Sunnyside brand logo">
     </a>
 
-    <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-md-auto bg-ltd">
+    <div class="collapse navbar-toggleable-sm-md">
+      <div class="arrow arrow-left"></div>
+      <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="#about">About Me</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="projects.html">Recent Projects</a>
+          <a class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pb-3_5" href="contact.html">Contact</a>
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item nav-item-contact">
+          <a class="nav-link btn btn-contact" href="#">Contact</a>
         </li>
       </ul>
-    </div> -->
+    </div>
   </nav>
 
   <!-- <a class="skip-link screen-reader-text" href="#content">Skip to content</a> -->
@@ -120,6 +124,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.loosenthedark.tech" target="_blank">loosenthedark</a>.
   </div>
+
+  <script src="./static/js/script.js"></script>
 </body>
 
 </html>
