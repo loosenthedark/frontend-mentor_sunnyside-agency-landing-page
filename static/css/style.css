@@ -73,8 +73,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   font-family: Fraunces, serif;
   color: hsl(214, 24%, 19%);
   clear: both;
@@ -193,7 +192,7 @@ a {
   text-decoration: none;
 }
 
-img {
+img:not(.profiler, .logo) {
   display: block;
   border: 0;
   width: 100%;
@@ -440,4 +439,25 @@ header {
 .photog-text p,
 .photog-text h3 {
   color: hsl(198, 62%, 26%);
+}
+
+/* Clients section */
+
+figure {
+  height: 54vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profiler {
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+
+blockquote {
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
 }

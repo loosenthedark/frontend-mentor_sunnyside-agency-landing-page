@@ -6,6 +6,8 @@ Accessibility guidelines taken from: https://www.linkedin.com/learning/css-advan
 
 Scroll offset fixed navbar workaround: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
 
+['Hey, what about the figure element?'](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#hey-what-about-the-figure-element) from [this CSS Tricks article](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/) was used as a reference point in order to follow semantic HTML best practices when coding the 'Client Testimonials' sections of the site
+
 https://tinyjpg.com/
 
 # Frontend Mentor - Sunnyside agency landing page solution
