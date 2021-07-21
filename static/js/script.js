@@ -1,7 +1,7 @@
 const BODY = document.querySelector('.grid-body');
 const HAMBURGER = document.querySelector('.navbar-toggler');
 const ICON = document.querySelector('.navbar-toggler-icon');
-const TRIANGLE = document.querySelector('.arrow-left');
+const TRIANGLE = document.querySelector('.triangle-left');
 const MENU = document.querySelector('.navbar-nav');
 let screenReaderText = document.querySelector('.navbar-toggler .screen-reader-text');
 
@@ -20,7 +20,7 @@ function hideMenu() {
 
 // Hide nav menu when touch or click happens elsewhere:
 function clickTarget(e) {
-    if (!MENU.contains(e.target) && e.target !== ICON && e.target !== TRIANGLE) {
+    if (e.target !== ICON && e.target !== TRIANGLE) {
       hideMenu();
   }
 }

@@ -4,6 +4,8 @@ Main stylesheet reset adapted from https://www.udemy.com/course/advanced-css-and
 
 Accessibility guidelines taken from: https://www.linkedin.com/learning/css-advanced-layouts-with-grid
 
+Scroll offset fixed navbar workaround: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+
 # Frontend Mentor - Sunnyside agency landing page solution
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.

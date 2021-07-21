@@ -59,6 +59,7 @@ Accessibility: taken from https://www.linkedin.com/learning/css-advanced-layouts
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -185,6 +186,13 @@ img {
   height: auto;
 }
 
+:target::before {
+  content: "";
+  display: block;
+  height: 4.75rem; /* fixed header height*/
+  margin: -4.75rem 0 0; /* negative fixed header height */
+}
+
 /* Buttons */
 
 .btn {
@@ -239,18 +247,18 @@ img {
   background-color: hsl(200, 100%, 62%);
 }
 
-.arrow {
+.triangle {
   width: 0;
   height: 0;
 }
 
-.arrow-left {
+.triangle-left {
   border-top: 1.5rem solid transparent;
   border-bottom: 1.5rem solid transparent; 
   border-right: 1.5rem solid hsl(26, 100%, 99%);
-  position: relative;
-  top: 1.275rem;
-  left: calc(100% + 83vw);
+  position: absolute;
+  top: 4.475rem;
+  left: calc(100% + 88.25vw);
 }
 
 .navbar-nav {
@@ -266,7 +274,7 @@ img {
   width: calc(100% - 2.5rem);
 }
 
-.arrow-left, .navbar-nav {
+.triangle-left, .navbar-nav {
   transition: all .25s;
 }
 
@@ -274,8 +282,8 @@ img {
   left: 1.25rem;
 }
 
-.arrow-left.show {
-  left: 83vw;
+.triangle-left.show {
+  left: 88.25vw;
 }
 
 .nav-item:not(.nav-item-contact) {
@@ -292,12 +300,15 @@ img {
 
 .nav-link:not(.btn) {
   color: hsl(260, 5%, 65%);
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* Header */
 
-.header {
-  height: 77.5vh;
+header {
+  height: 79vh;
   background-image: url(../images/image-header.jpg);
   background-size: cover;
   background-position: bottom;
@@ -319,4 +330,24 @@ img {
   top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* About section */
+
+.about-section-image {
+  height: 47.5vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.brand-image {
+  background-image: url(../images/image-transform.jpg);
+}
+
+.audience-image {
+  background-image: url(../images/image-stand-out.jpg);
+}
+
+.about-section-text {
+  height: 60vh;
 }
