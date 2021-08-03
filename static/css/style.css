@@ -627,10 +627,33 @@ footer {
     font-size: 1.25rem;
   }
 
+  h4 {
+    padding-bottom: 0;
+  }
+
+  h5 {
+    font-size: .875rem;
+  }
+
+  h6 {
+    font-size: .65rem;
+  }
+
   blockquote {
     font-size: .7rem;
-    line-height: 1.75;
-    margin: 0 .9rem;
+    line-height: 1.7;
+    margin: 0 .6rem;
+  }
+
+  figure {
+    height: 74%;
+    width: calc(100% / 3);
+    justify-content: space-between;
+  }
+
+  figcaption {
+    position: relative;
+    top: -1rem;
   }
 
   /* Navbar */
@@ -780,8 +803,32 @@ footer {
 
   /* Client Testimonials section */
 
+  figure:first-of-type,
+  figure:nth-of-type(3) {
+    width: 32.25%;
+  }
+
+  figure:nth-of-type(2) {
+    width: 35.5%;
+  }
+
   #clients {
     height: calc(100vh - 34.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 84vw;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
+  .testimonials-heading {
+    width: 100%;
+  }
+
+  .profiler {
+    width: 3rem;
+    height: 3rem;
+    margin: 2.5rem 0 .5rem;
   }
 
   /*--------------------------------------------------------------
@@ -789,11 +836,14 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
   /* Layout with CSS Grid */
   @supports (grid-area: auto) {
+
     #clients {
       display: grid;
-      grid-template-columns: 32% 36% 32%;
-      max-width: 90vw;
+      grid-template-columns: 32.25% 35.5% 32.25%;
+      grid-template-rows: 26% 74%;
+      max-width: 84vw;
       margin: 0 auto;
+      padding-bottom: 5rem;
     }
 
     .testimonials-heading {
@@ -801,14 +851,15 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-column-end: 4;
     }
 
-    figure {
+    figure:first-of-type,
+    figure:nth-of-type(3),
+    figure:nth-of-type(2) {
+      width: unset;
       height: unset;
-      justify-content: space-between;
     }
 
-    .profiler {
-      width: 3rem;
-      height: 3rem;
+    .client {
+      padding: .5rem 0 .35rem;
     }
 
   }
