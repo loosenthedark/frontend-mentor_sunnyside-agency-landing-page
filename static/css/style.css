@@ -617,6 +617,12 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+  /* Global styles */
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
   /* Navbar */
 
   .navbar-toggler {
@@ -660,6 +666,56 @@ footer {
     background-color: hsla(0, 0%, 100%, 95%);
     font-size: .55rem;
     padding: .6rem 1rem;
+  }
+
+  /* Main */
+
+  /* About section */
+
+  #about {
+    font-size: .8rem;
+  }
+
+  #about p {
+    line-height: 1.5;
+  }
+
+  .about-section {
+    height: 50vh;
+    display: flex;
+  }
+
+  .about-section>* {
+    height: unset;
+  }
+
+  .about-section-text {
+    padding: 2.5rem 2.5rem 3.5rem;
+    max-height: unset;
+  }
+
+  .about-section-image {
+    max-height: unset;
+  }
+
+  .about-section-text {
+    width: 40%;
+  }
+
+  .about-section-image {
+    width: 60%;
+  }
+
+  .brand-text {
+    order: 1;
+  }
+
+  .brand-image {
+    order: 2;
+  }
+
+  .learn-more {
+    font-size: .7rem;
   }
 
 }
