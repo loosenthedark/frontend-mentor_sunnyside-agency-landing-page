@@ -14,6 +14,8 @@ Scroll offset fixed navbar workaround: https://stackoverflow.com/questions/40861
 
 [TinyJPG (online image compression tool)](https://tinyjpg.com/)
 
+[How to Apply CSS3 Transforms to Background Images](https://www.sitepoint.com/css3-transform-background-image/) (SitePoint)
+
 # Frontend Mentor - Sunnyside agency landing page solution
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.

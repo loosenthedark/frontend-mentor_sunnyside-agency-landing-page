@@ -627,6 +627,12 @@ footer {
     font-size: 1.25rem;
   }
 
+  blockquote {
+    font-size: .7rem;
+    line-height: 1.75;
+    margin: 0 .9rem;
+  }
+
   /* Navbar */
 
   .navbar-toggler {
@@ -748,6 +754,8 @@ footer {
     font-size: .75rem;
   }
 
+  /* background-image rotation implemented with help from the following tutorial: https://www.sitepoint.com/css3-transform-background-image/ */
+
   .design-image {
     position: relative;
     background-image: unset;
@@ -768,6 +776,41 @@ footer {
 
   .design-text {
     top: 7.5vh;
+  }
+
+  /* Client Testimonials section */
+
+  #clients {
+    height: calc(100vh - 34.5rem);
+  }
+
+  /*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+  /* Layout with CSS Grid */
+  @supports (grid-area: auto) {
+    #clients {
+      display: grid;
+      grid-template-columns: 32% 36% 32%;
+      max-width: 90vw;
+      margin: 0 auto;
+    }
+
+    .testimonials-heading {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    figure {
+      height: unset;
+      justify-content: space-between;
+    }
+
+    .profiler {
+      width: 3rem;
+      height: 3rem;
+    }
+
   }
 
 }
