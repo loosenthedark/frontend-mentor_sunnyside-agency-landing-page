@@ -10,7 +10,6 @@ function showMenu() {
   TRIANGLE.classList.toggle('show');
   HAMBURGER.getAttribute('aria-expanded') == 'false' ? HAMBURGER.setAttribute('aria-expanded', true) : HAMBURGER.setAttribute('aria-expanded', false);
   screenReaderText.innerHTML == 'Reveal menu' ? screenReaderText.innerHTML = 'Hide menu' : screenReaderText.innerHTML = 'Reveal menu';
-
 }
 
 function hideMenu() {
