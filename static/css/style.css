@@ -831,6 +831,12 @@ footer {
     margin: 2.5rem 0 .5rem;
   }
 
+  /* Image gallery */
+
+  #gallery {
+    flex-wrap: nowrap;
+  }
+
   /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
