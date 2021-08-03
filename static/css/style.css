@@ -910,3 +910,77 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
 }
+
+/* small laptop screens */
+
+@media screen and (min-width: 992px) {
+
+  /* Global styles */
+
+  header {
+    background-image: url(../images/image-header-lg.jpg);
+    height: 90vh;
+  }
+
+  /* Buttons */
+
+  .btn-contact {
+    padding: 1.125rem 2rem;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    padding: 3.25vw 2.75vw;
+  }
+
+  .logo {
+    width: 11.5vw;
+  }
+
+  .navbar-nav {
+    top: 3.5vw;
+    right: 1.5vw;
+  }
+
+  .nav-item:not(.nav-item-contact) {
+    margin: 0 1.5vw;
+  }
+
+  .nav-item-contact {
+    margin: 0 1vw 0 2.5vw;
+    font-size: 1rem;
+  }
+
+  .nav-link,
+  .nav-link:not(.btn) {
+    font-size: unset;
+  }
+
+  /* Main */
+
+  /* About section */
+
+
+  /* Services section */
+
+
+
+  /* Client Testimonials section */
+
+
+  /* Image gallery */
+
+
+
+  /* Footer */
+
+
+
+  /*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+  /* Layout with CSS Grid */
+  @supports (grid-area: auto) {}
+
+}
