@@ -623,6 +623,10 @@ footer {
     font-size: 1.5rem;
   }
 
+  h3 {
+    font-size: 1.25rem;
+  }
+
   /* Navbar */
 
   .navbar-toggler {
@@ -716,6 +720,54 @@ footer {
 
   .learn-more {
     font-size: .7rem;
+  }
+
+  /* Services section */
+
+  #services {
+    display: flex;
+  }
+
+  .services-section {
+    width: 50%;
+    height: 80vh;
+    max-height: 34.5rem;
+  }
+
+  .services-section-image {
+    height: 100%;
+    background-position: top;
+  }
+
+  .services-section-text {
+    padding: 1rem 3rem;
+    bottom: 2vh;
+  }
+
+  .services-section-text p {
+    font-size: .75rem;
+  }
+
+  .design-image {
+    position: relative;
+    background-image: unset;
+    overflow: hidden;
+  }
+
+  .design-image:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(../images/image-graphic-design.jpg) center no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+  }
+
+  .design-text {
+    top: 7.5vh;
   }
 
 }
