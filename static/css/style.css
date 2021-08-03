@@ -917,9 +917,16 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   /* Global styles */
 
+  h2 {
+    font-size: 2.75vw;
+    padding-bottom: 2vw;
+    padding-right: 5vw;
+  }
+
   header {
     background-image: url(../images/image-header-lg.jpg);
     height: 90vh;
+    max-height: 50rem;
   }
 
   /* Buttons */
@@ -929,6 +936,10 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
   /* Navbar */
+
+  .fixed-top {
+    position: unset;
+  }
 
   .navbar {
     padding: 3.25vw 2.75vw;
@@ -957,10 +968,71 @@ CSS Grid layout for wider screens, when browser supports grid:
     font-size: unset;
   }
 
+  /* Header */
+
+  .heading-slogan {
+    padding-top: 22vh;
+    font-size: 3.3rem;
+    letter-spacing: .7rem;
+  }
+
+  .arrow-box {
+    top: 52%;
+  }
+
   /* Main */
 
   /* About section */
 
+  #about {
+    font-size: 1.25vw;
+  }
+
+  #about p {
+    line-height: 1.7;
+    padding-left: 0;
+    padding-right: 0;
+    padding-right: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  #about .audience-text p {
+    padding-right: 7vw;
+  }
+
+  .about-section {
+    height: 42vw;
+    max-height: 40rem;
+  }
+
+  .about-section-image,
+  .about-section-text {
+    width: 50%;
+  }
+
+  .about-section-text {
+    text-align: left;
+    padding-left: 10vw;
+    padding-right: 3vw;
+    align-items: flex-start;
+  }
+
+  #about .audience-text {
+    padding-left: 8vw;
+  }
+
+  .brand-image {
+    background-image: url(../images/image-transform-lg.jpg);
+  }
+
+  .audience-image {
+    background-image: url(../images/image-stand-out-lg.jpg);
+  }
+
+  .learn-more {
+    font-size: 1.125vw;
+    margin-left: .25vw;
+  }
 
   /* Services section */
 
