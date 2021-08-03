@@ -283,6 +283,52 @@ footer {
   color: hsl(214, 24%, 19%);
 }
 
+/* Back-to-top button */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: -.5rem;
+  right: .9rem;
+  z-index: 98;
+  font-size: 3.5rem;
+  color: hsl(168, 34%, 41%);
+  display: none;
+}
+
+#btn-back-to-top:hover {
+  color: hsl(47, 58%, 56%);
+}
+
+/* Code block adapted from https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555 */
+
+.js .cd-top--fade-out {
+  opacity: .5
+}
+
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1
+}
+
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  bottom: var(--cd-back-to-top-margin);
+  right: 20px;
+  right: var(--cd-back-to-top-margin);
+  display: inline-block;
+  height: 40px;
+  height: var(--cd-back-to-top-size);
+  width: 40px;
+  width: var(--cd-back-to-top-size);
+}
+
 /* Navbar */
 
 .navbar {
@@ -393,9 +439,10 @@ footer {
 
 .arrow-box {
   position: absolute;
-  top: 63%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: bobbing 2s 2.5s ease-in-out infinite;
 }
 
 /* Main */
@@ -606,6 +653,24 @@ footer {
 
 .attribution a {
   color: #fff;
+}
+
+/* Animations */
+
+@keyframes bobbing {
+
+  0% {
+    top: 55%;
+  }
+
+  50% {
+    top: 60%;
+  }
+
+  100% {
+    top: 55%;
+  }
+
 }
 
 /* Media Queries */
@@ -957,24 +1022,39 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   header {
     background-image: url(../images/image-header-lg.jpg);
-    height: 90vh;
-    max-height: 50rem;
+    height: 80vh;
+    max-height: 44rem;
+  }
+
+  footer {
+    height: 45vh;
+    justify-content: space-between;
+    padding-bottom: 10vh;
   }
 
   /* Buttons */
 
   .btn-contact {
-    padding: 1.125rem 2rem;
+    padding: 1.25vw 2.22222vw;
   }
 
   /* Navbar */
 
   .fixed-top {
     position: unset;
+    height: unset;
+    height: 5rem;
+    line-height: 5rem;
   }
 
-  .navbar {
-    padding: 3.25vw 2.75vw;
+  .navbar-logo {
+    height: 5rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    line-height: 5rem;
+    display: flex;
+    align-items: center;
   }
 
   .logo {
@@ -982,7 +1062,6 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
   .navbar-nav {
-    top: 3.5vw;
     right: 1.5vw;
   }
 
@@ -991,7 +1070,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
   .nav-item-contact {
-    margin: 0 1vw 0 2.5vw;
+    margin: 0 0 0 1.5vw;
     font-size: 1rem;
   }
 
@@ -1003,13 +1082,13 @@ CSS Grid layout for wider screens, when browser supports grid:
   /* Header */
 
   .heading-slogan {
-    padding-top: 22vh;
-    font-size: 3.3rem;
+    padding-top: 10vh;
+    font-size: 3.5vw;
     letter-spacing: .7rem;
   }
 
   .arrow-box {
-    top: 52%;
+    top: 35.75vh;
   }
 
   /* Main */
@@ -1094,7 +1173,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     height: 86vh;
     max-width: 80vw;
     max-height: 50rem;
-    grid-template-rows: 23% 77%;
+    grid-template-rows: 20% 80%;
   }
 
   .profiler {
@@ -1103,10 +1182,10 @@ CSS Grid layout for wider screens, when browser supports grid:
     margin: 2.5rem 0 6vh;
   }
 
-  figure:nth-of-type(2) > blockquote {
+  figure:nth-of-type(2)>blockquote {
     margin-left: 2vw;
     margin-right: 2vw;
-}
+  }
 
   .client {
     padding-bottom: 1vw;
@@ -1114,11 +1193,54 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   /* Image gallery */
 
+  .gallery-section {
+    height: 50vh;
+    max-height: unset;
+  }
 
+  .gallery-section:first-of-type {
+    background-image: url(../images/image-gallery-milkbottles-lg.jpg);
+  }
+
+  .gallery-section:nth-of-type(2) {
+    background-image: url(../images/image-gallery-orange-lg.jpg);
+  }
+
+  .gallery-section:nth-of-type(3) {
+    background-image: url(../images/image-gallery-cone-lg.jpg);
+  }
+
+  .gallery-section:nth-of-type(4) {
+    background-image: url(../images/image-gallery-sugarcubes-lg.jpg);
+  }
 
   /* Footer */
 
+  .footer-nav {
+    margin-bottom: 4vw;
+    width: 25%;
+  }
 
+  .footer-nav-social {
+    width: 16%;
+  }
+
+  .footer-nav-social .nav-item {
+    margin: 0 1vw;
+  }
+
+  .footer-nav-social .nav-link img {
+    width: 100%;
+  }
+
+  .logo-cyan {
+    width: 12.5vw;
+  }
+
+  .footer-logo {
+    margin-top: 4vh;
+    margin-bottom: 0;
+  }
 
   /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
@@ -1131,6 +1253,15 @@ CSS Grid layout for wider screens, when browser supports grid:
 /* large laptop screens */
 
 @media screen and (min-width: 1200px) {
+
+  /* Global styles */
+
+  footer {
+    min-height: 19rem;
+  }
+
+  /* Client Testimonials section */
+
   #clients {
     min-height: 35rem;
   }
