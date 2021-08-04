@@ -92,7 +92,7 @@ i {
 }
 
 blockquote {
-  margin: 0 1.66rem;
+  margin: 0 10vw;
   line-height: 1.8;
   margin-bottom: 1.125rem;
   font-size: 1.1rem;
@@ -169,10 +169,6 @@ h4 {
   margin: 0;
 }
 
-h2 {
-  font-size: 2.1rem;
-}
-
 h3 {
   font-size: 1.75rem;
 }
@@ -207,6 +203,12 @@ h5 {
   line-height: 1.15;
   padding: 1rem 0 1.33rem;
   position: relative;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 p {
@@ -253,6 +255,18 @@ footer {
   align-items: center;
   flex-direction: column;
   position: relative;
+}
+
+/* Media Query */
+
+/* small mobile */
+
+@media screen and (max-width: 360px) {
+
+  figure {
+    margin-bottom: 2.5rem;
+  }
+
 }
 
 /* Pseudo-element selector workaround to handle fixed navbar encroaching into anchor link areas - as suggested here: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
@@ -489,6 +503,13 @@ footer {
   position: relative;
 }
 
+.about-section-text p {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .learn-more {
   font-family: Fraunces, serif;
   color: hsl(214, 24%, 19%);
@@ -511,6 +532,23 @@ footer {
 
 .audience-text .learn-more {
   background-image: linear-gradient(90deg, hsla(7, 99%, 70%, .25), hsla(7, 99%, 70%, .25));
+}
+
+/* Media Query */
+
+/* small mobile */
+
+@media screen and (max-width: 360px) {
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-section-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
 }
 
 /* Services section */
@@ -542,8 +580,8 @@ footer {
 
 .services-section-text p {
   font-size: 1rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .design-text p,
@@ -579,7 +617,7 @@ footer {
 }
 
 .gallery-section {
-  width: 50vw;
+  width: 50%;
   height: 50vw;
   max-height: 15rem;
   background-size: cover;
@@ -696,6 +734,15 @@ footer {
 
   /* Global styles */
 
+  h2 {
+    padding-top: .5rem;
+    max-width: 25rem;
+  }
+
+  blockquote {
+    margin: 0 15vw;
+  }
+
   header {
     background-image: url(../images/image-header-lg.jpg);
   }
@@ -710,6 +757,61 @@ footer {
 
   .arrow-box {
     top: 49%;
+  }
+
+  /* Main */
+
+  /* About section */
+
+  .brand-image {
+    background-image: url(../images/image-transform-lg.jpg);
+  }
+
+  .audience-image {
+    background-image: url(../images/image-stand-out-lg.jpg);
+  }
+
+  .about-section-image {
+    height: 57vh;
+  }
+
+  .about-section-text {
+    height: 55.5vh;
+    padding: 1rem 2rem 2rem;
+  }
+
+  .about-section-text p {
+    max-width: 40rem;
+  }
+
+  /* Services section */
+
+  .design-image {
+    background-image: url(../images/image-graphic-design-lg.jpg);
+  }
+
+  .photog-image {
+    background-image: url(../images/image-photography-lg.jpg);
+  }
+
+  .services-section-text {
+    left: calc((100% - 30rem) / 2);
+  }
+
+  .services-section-text p {
+    max-width: 30rem;
+  }
+
+  /* Image gallery */
+
+  #gallery {
+    flex-wrap: nowrap;
+  }
+
+  /* Footer */
+
+  .footer-nav {
+    width: 36%;
   }
 
   /* Animations */
@@ -738,7 +840,8 @@ footer {
   /* Global styles */
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 3vw;
+    padding-bottom: 1.1rem;
   }
 
   h3 {
@@ -750,17 +853,17 @@ footer {
   }
 
   h5 {
-    font-size: .875rem;
+    font-size: .95rem;
   }
 
   h6 {
-    font-size: .65rem;
+    font-size: .75rem;
   }
 
   blockquote {
-    font-size: .7rem;
+    font-size: .825rem;
     line-height: 1.7;
-    margin: 0 .6rem;
+    margin: 0 .6rem 1.5rem;
   }
 
   figure {
@@ -772,14 +875,20 @@ footer {
   figcaption {
     position: relative;
     top: -1rem;
+    margin-bottom: 1rem;
   }
 
   footer {
-    height: calc(50vh - 15rem);
+    height: calc(66.666vw - 15rem);
+    min-height: 22rem;
     padding: 2rem 3rem;
   }
 
   /* Navbar */
+
+  .fixed-top {
+    position: unset;
+  }
 
   .navbar-toggler {
     display: none;
@@ -840,11 +949,14 @@ footer {
   /* About section */
 
   #about {
-    font-size: .8rem;
+    font-size: 1.6vw;
   }
 
   #about p {
-    line-height: 1.5;
+    line-height: 1.6;
+    padding-left: unset;
+    padding-right: unset;
+    margin-bottom: 1.25rem;
   }
 
   .about-section {
@@ -857,7 +969,7 @@ footer {
   }
 
   .about-section-text {
-    padding: 2.5rem 2.5rem 3.5rem;
+    padding: 2.5rem 1.6rem 3.5rem;
     max-height: unset;
   }
 
@@ -882,7 +994,7 @@ footer {
   }
 
   .learn-more {
-    font-size: .7rem;
+    font-size: 1.6vw;
   }
 
   /* Services section */
@@ -905,10 +1017,17 @@ footer {
   .services-section-text {
     padding: 1rem 3rem;
     bottom: 2vh;
+    left: unset;
+    width: 100%;
   }
 
   .services-section-text p {
-    font-size: .75rem;
+    font-size: .925rem;
+    padding-left: unset;
+    padding-right: unset;
+    max-width: 22.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* background-image rotation implemented with help from the following tutorial: https://www.sitepoint.com/css3-transform-background-image/ */
@@ -932,7 +1051,7 @@ footer {
   }
 
   .design-text {
-    top: 7.5vh;
+    top: 3.5vh;
   }
 
   /* Client Testimonials section */
@@ -947,7 +1066,8 @@ footer {
   }
 
   #clients {
-    height: calc(100vh - 34.5rem);
+    height: calc(133vw - 34.5rem);
+    max-height: 33rem;
     display: flex;
     flex-wrap: wrap;
     max-width: 84vw;
@@ -965,12 +1085,6 @@ footer {
     margin: 2.5rem 0 .5rem;
   }
 
-  /* Image gallery */
-
-  #gallery {
-    flex-wrap: nowrap;
-  }
-
   /* Footer */
 
   .footer-logo {
@@ -978,22 +1092,18 @@ footer {
   }
 
   .footer-nav {
-    width: 30%;
+    width: 45%;
     top: -1rem;
   }
 
   .footer-nav-social {
     top: -2.5rem;
-    width: 36%;
+    width: 50%;
   }
 
   .footer-nav .nav-link {
     color: hsl(168, 34%, 41%);
-    font-size: .7rem;
-  }
-
-  .logo-cyan {
-    width: 9rem;
+    font-size: .9rem;
   }
 
   .footer-nav-social .nav-link img {
@@ -1032,7 +1142,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       display: grid;
       grid-template-columns: 32.25% 35.5% 32.25%;
       grid-template-rows: 26% 74%;
-      max-width: 84vw;
+      max-width: 87vw;
       margin: 0 auto;
       padding-bottom: 5rem;
     }
@@ -1067,10 +1177,12 @@ CSS Grid layout for wider screens, when browser supports grid:
     font-size: 2.75vw;
     padding-bottom: 2vw;
     padding-right: 5vw;
+    padding-left: unset;
+    max-width: unset;
   }
 
   h3 {
-    font-size: 1.9vw;
+    font-size: 2.25vw;
   }
 
   h4 {
@@ -1122,7 +1234,6 @@ CSS Grid layout for wider screens, when browser supports grid:
   /* Navbar */
 
   .fixed-top {
-    position: unset;
     height: unset;
     height: 5rem;
     line-height: 5rem;
@@ -1228,7 +1339,6 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   .learn-more {
     font-size: 1.125vw;
-    margin-left: .25vw;
   }
 
   /* Services section */
@@ -1242,10 +1352,11 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
   .services-section-text p {
-    font-size: 1.1vw;
-    width: 60%;
+    font-size: .9rem;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    max-width: unset;
   }
 
   .design-text {
@@ -1303,11 +1414,11 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   .footer-nav {
     margin-bottom: 4vw;
-    width: 25%;
+    width: 21rem;
   }
 
   .footer-nav-social {
-    width: 16%;
+    width: 15rem;
   }
 
   .footer-nav-social .nav-item {
@@ -1323,7 +1434,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
   .footer-logo {
-    margin-top: 4vh;
+    margin-top: 2.5vh;
     margin-bottom: 0;
   }
 
@@ -1342,7 +1453,14 @@ CSS Grid layout for wider screens, when browser supports grid:
   /* Global styles */
 
   footer {
-    min-height: 19rem;
+    min-height: 20.5rem;
+  }
+
+  /* Services section */
+
+  .services-section-text p {
+    font-size: 1rem;
+    width: 70%;
   }
 
   /* Client Testimonials section */
@@ -1350,4 +1468,11 @@ CSS Grid layout for wider screens, when browser supports grid:
   #clients {
     min-height: 35rem;
   }
+
+  /* Image gallery */
+
+  .gallery-section {
+    height: 45vh;
+  }
+
 }
