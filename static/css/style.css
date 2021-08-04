@@ -387,6 +387,7 @@ footer {
   position: absolute;
   top: 4.25rem;
   height: 48vh;
+  min-height: 20rem;
   left: 100%;
   display: block;
   width: calc(100% - 2.5rem);
@@ -433,13 +434,27 @@ footer {
   font-weight: 900;
   color: hsl(0, 0%, 100%);
   letter-spacing: .35rem;
-  padding-top: 31.5%;
+  padding-top: 8rem;
   line-height: 1.25;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+/* Media Query */
+
+/* small mobile */
+
+@media screen and (max-width: 360px) {
+
+  .heading-slogan {
+    font-size: 2.15rem;
+  }
+
 }
 
 .arrow-box {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: bobbing 2s 2.5s ease-in-out infinite;
@@ -660,15 +675,15 @@ footer {
 @keyframes bobbing {
 
   0% {
-    top: 55%;
-  }
-
-  50% {
     top: 60%;
   }
 
+  50% {
+    top: 65%;
+  }
+
   100% {
-    top: 55%;
+    top: 60%;
   }
 
 }
@@ -677,7 +692,44 @@ footer {
 
 /* large mobile/small tablet */
 
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 600px) {
+
+  /* Global styles */
+
+  header {
+    background-image: url(../images/image-header-lg.jpg);
+  }
+
+  /* Header */
+
+  .heading-slogan {
+    padding-top: 4.5rem;
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .arrow-box {
+    top: 49%;
+  }
+
+  /* Animations */
+
+  @keyframes bobbing {
+
+    0% {
+      top: 49%;
+    }
+
+    50% {
+      top: 54%;
+    }
+
+    100% {
+      top: 49%;
+    }
+
+  }
+}
 
 /* medium tablet screens */
 
@@ -734,6 +786,7 @@ footer {
   }
 
   .navbar-nav {
+    min-height: unset;
     background-color: transparent;
     text-align: center;
     padding: unset;
@@ -758,18 +811,28 @@ footer {
   }
 
   .nav-item-contact {
-    margin: 1rem 1.5rem 1rem 1rem;
+    margin: 1.1rem 1.5rem 1rem 1rem;
   }
 
   .nav-link:not(.btn) {
     color: hsla(0, 0%, 100%, 75%);
-    font-size: .6rem;
+    font-size: .8rem;
   }
 
   .btn-contact {
     background-color: hsla(0, 0%, 100%, 95%);
-    font-size: .55rem;
-    padding: .6rem 1rem;
+    font-size: .65rem;
+    padding: .7rem 1.15rem;
+  }
+
+  /* Header */
+
+  .heading-slogan {
+    padding-top: 20vh;
+  }
+
+  .arrow-box {
+    top: 34vh;
   }
 
   /* Main */
@@ -937,6 +1000,24 @@ footer {
     width: 80%;
   }
 
+  /* Animations */
+
+  @keyframes bobbing {
+
+    0% {
+      top: 34vh;
+    }
+
+    50% {
+      top: 39vh;
+    }
+
+    100% {
+      top: 34vh;
+    }
+
+  }
+
   /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
@@ -1077,6 +1158,10 @@ CSS Grid layout for wider screens, when browser supports grid:
   .nav-link,
   .nav-link:not(.btn) {
     font-size: unset;
+  }
+
+  .nav-link {
+    font-size: .85rem;
   }
 
   /* Header */
