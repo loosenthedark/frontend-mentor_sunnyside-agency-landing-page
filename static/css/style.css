@@ -295,6 +295,20 @@ footer {
 .btn-contact {
   background-color: hsl(51, 100%, 49%);
   color: hsl(214, 24%, 19%);
+  transition: all .125s ease-in-out;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  color: hsla(0, 0%, 100%, 95%);
+}
+
+.btn-contact:hover {
+  background-color: hsl(200, 100%, 72%);
+}
+
+.btn-contact:focus {
+  background-color: hsl(200, 100%, 45%);
 }
 
 /* Back-to-top button */
@@ -426,7 +440,7 @@ footer {
 }
 
 .nav-item:not(.nav-item-contact) {
-  margin: 1.625rem 0;
+  margin: 1.125rem 0 1.625rem;
 }
 
 .nav-item-contact {
@@ -530,8 +544,24 @@ footer {
   background-image: linear-gradient(90deg, hsla(51, 100%, 49%, .25), hsla(51, 100%, 49%, .25));
 }
 
+.brand-text .learn-more:hover {
+  background-image: linear-gradient(90deg, hsla(51, 90%, 52%, .65), hsla(51, 90%, 52%, .65));
+}
+
+.brand-text .learn-more:focus {
+  background-image: linear-gradient(90deg, hsla(51, 90%, 52%, .99), hsla(51, 90%, 52%, .99));
+}
+
 .audience-text .learn-more {
   background-image: linear-gradient(90deg, hsla(7, 99%, 70%, .25), hsla(7, 99%, 70%, .25));
+}
+
+.audience-text .learn-more:hover {
+  background-image: linear-gradient(90deg, hsla(7, 99%, 70%, .65), hsla(7, 99%, 70%, .65));
+}
+
+.audience-text .learn-more:focus {
+  background-image: linear-gradient(90deg, hsla(7, 99%, 70%, .99), hsla(7, 99%, 70%, .99));
 }
 
 /* Media Query */
@@ -676,11 +706,46 @@ footer {
 .footer-nav-social .nav-link {
   color: hsl(168, 34%, 41%);
   font-size: 1.025rem;
+  transition: all .125s ease-in-out;
 }
 
-.twitter {
-  position: relative;
-  top: .125rem;
+.footer-nav .nav-link {
+  font-size: 1.025rem;
+}
+
+.footer-nav-social .nav-link {
+  font-size: 1.5rem;
+}
+
+.footer-nav .nav-link:hover,
+.footer-nav-social .nav-link:hover {
+  color: hsla(0, 0%, 100%, 85%);
+}
+
+.footer-nav .nav-link:focus,
+.footer-nav-social .nav-link:focus {
+  color: hsla(0, 0%, 100%, 99%);
+}
+
+.ltd-link,
+.fm-link {
+  transition: all .125s ease-in-out;
+}
+
+.ltd-link:hover {
+  color: hsl(184, 100%, 19%);
+}
+
+.fm-link:hover {
+  color: hsl(188, 36%, 52%);
+}
+
+.ltd-link:focus {
+  color: hsl(185, 100%, 15%);
+}
+
+.fm-link:focus {
+  color: hsl(188, 36%, 40%);
 }
 
 /* Attribution notes */
@@ -923,7 +988,7 @@ footer {
     margin: 1.1rem 1.5rem 1rem 1rem;
   }
 
-  .nav-link:not(.btn) {
+  .navbar-nav .nav-link:not(.btn) {
     color: hsla(0, 0%, 100%, 75%);
     font-size: .8rem;
   }
@@ -1104,6 +1169,10 @@ footer {
   .footer-nav .nav-link {
     color: hsl(168, 34%, 41%);
     font-size: .9rem;
+  }
+
+  .footer-nav-social .nav-link {
+   font-size: 1.4rem;
   }
 
   .footer-nav-social .nav-link img {
