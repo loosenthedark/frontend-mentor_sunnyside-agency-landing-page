@@ -1172,7 +1172,7 @@ footer {
   }
 
   .footer-nav-social .nav-link {
-   font-size: 1.4rem;
+    font-size: 1.4rem;
   }
 
   .footer-nav-social .nav-link img {
@@ -1338,6 +1338,10 @@ CSS Grid layout for wider screens, when browser supports grid:
   .nav-link,
   .nav-link:not(.btn) {
     font-size: unset;
+  }
+
+  .navbar-nav .nav-link:not(.btn) {
+    font-size: .95rem;
   }
 
   .nav-link {
