@@ -28,7 +28,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Design mockups (`jpeg` starter files provided in Frontend Mentor challenge hub)
+### Design mockups
+
+_(`jpeg` starter files provided in Frontend Mentor challenge hub)_
 
 #### Mobile design:
 <details>
