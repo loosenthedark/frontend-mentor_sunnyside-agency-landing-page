@@ -1202,7 +1202,9 @@ footer {
   /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
+
   /* Layout with CSS Grid */
+  
   @supports (grid-area: auto) {
 
     :target::before {

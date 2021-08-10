@@ -60,9 +60,7 @@ Users should be able to:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+At the time of writing (August 2021), the project's [custom stylesheet](static/css/style.css) contains over 1,500 lines of CSS. It is my intention to refactor and reduce the size of this file at a later date, most likely through targeted use of [CSS Variables](https://www.w3schools.com/css/css3_variables.asp)
 
 ### Useful resources
 
@@ -77,8 +75,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Responsively App](https://responsively.app/) was used to capture video of scrollable device emulators showcasing this solution's responsive mobile-first layout
 - [Ezgif](https://ezgif.com/) was then used to convert this video to the `gif` format for inclusion in the [Screenshots](#screenshots) section of this Markdown file
 - [Ray.so:](https://ray.so/) was used to create the code block images featured in this Markdown file
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Developer
 
