@@ -1513,12 +1513,6 @@ CSS Grid layout for wider screens, when browser supports grid:
     margin-bottom: 0;
   }
 
-  /*--------------------------------------------------------------
-CSS Grid layout for wider screens, when browser supports grid:
---------------------------------------------------------------*/
-  /* Layout with CSS Grid */
-  @supports (grid-area: auto) {}
-
 }
 
 /* large laptop screens */

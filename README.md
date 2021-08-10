@@ -1,4 +1,4 @@
-![Frontend Mentor logo](docs/images/screenshots/logo-frontend-mentor.png)
+[![Frontend Mentor logo](docs/images/screenshots/logo-frontend-mentor.png)](https://t.co/9kqv7Vpy2s?amp=1)
 
 # Sunnyside agency landing page
 
@@ -54,6 +54,10 @@ Users should be able to:
 
 ![](docs/images/screenshots/background-image-rotation-css-snippet.png)
 
+- This was only my second time building out a site incorporating CSS grid, so I found [Morten Rand-Hendriksen](https://twitter.com/mor10)'s [LinkedIn Learning course on this layout method](https://www.linkedin.com/learning/css-advanced-layouts-with-grid) to be an excellent primer. More specifically, his advice on using a [`@supports` CSS at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) to check for browser support before conditionally applying Grid styles was something I adhered to within the project's stylesheet:
+
+![](docs/images/screenshots/grid-browser-support-check-css-snippet.png)
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
@@ -65,6 +69,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - ['Fixed page header overlaps in-page anchors'](https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors) (Stack Overflow) was used to find a pure CSS workaround for this persistent issue caused by the site's `nav.fixed-top` covering the top portion of each anchor link area
 - ['Hey, what about the figure element?'](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#hey-what-about-the-figure-element) from [this CSS Tricks article](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/) was used as a reference in an effort to follow semantic HTML5 best practices when coding the site's ['Client Testimonials' `section`](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page/#clients)
 - ['How to Apply CSS3 Transforms to Background Images'](https://www.sitepoint.com/css3-transform-background-image/) (SitePoint) was used to rotate one of the background images featured in the site's ['Services' `section`](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page/#services) 180 degrees on tablet and desktop ([see above](#what-i-learned))
+- ['A Complete Guide to Grid'](https://css-tricks.com/snippets/css/complete-guide-grid/) (CSS-Tricks) was used as a 'cheat sheet' for implementing the site's partial CSS Grid layout on tablet and desktop
 - [W3Schools HTML Colour Picker](https://www.w3schools.com/colors/colors_picker.asp) was used for generating on-the-fly colour pairings and modifications (lightening, darkening etc. of core project colours)
 - [Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html) was used to gauge the correct amount of `box-shadow` for the site's off-canvas `navbar-nav` menu on mobile
 - [PicResize (online image editing tool)](https://picresize.com/) was used to crop and resize images
