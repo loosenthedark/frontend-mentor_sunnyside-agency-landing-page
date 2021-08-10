@@ -86,7 +86,7 @@ _(`jpeg` starter files provided in [Frontend Mentor challenge hub](https://www.f
 
 ### What I learned
 
-- I wanted to have a bit of fun by flipping one of the site's ['Services' `section`](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page/#services)'s background images on its head. To achieve this, I had to leverage an absolutely-positioned [`::before` pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/::before). This pseudo-element's `transform` property was used to perform the desired rotation:
+- I wanted to have a bit of fun by flipping one of the site's ['Services' `section`](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page/#services)'s [background images](static/images/image-graphic-design.jpg) on its head. To achieve this, I had to leverage an absolutely-positioned [`::before` pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/::before). This pseudo-element's `transform` property was used to perform the desired rotation:
 
   ![](docs/images/screenshots/background-image-rotation-css-snippet.png)
 
