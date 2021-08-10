@@ -1105,7 +1105,7 @@ footer {
     overflow: hidden;
   }
 
-  .design-image:before {
+  .design-image::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1418,7 +1418,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   /* Services section */
 
-  .design-image:before {
+  .design-image::before {
     background-image: url(../images/image-graphic-design-lg.jpg);
   }
 
