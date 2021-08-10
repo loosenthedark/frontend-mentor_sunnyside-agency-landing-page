@@ -2,6 +2,8 @@
 
 # Sunnyside agency landing page
 
+#### [Live link to deployed project](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page) (hosted on GitHub Pages)
+
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
