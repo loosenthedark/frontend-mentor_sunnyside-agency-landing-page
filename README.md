@@ -86,17 +86,17 @@ _(`jpeg` starter files provided in [Frontend Mentor challenge hub](https://www.f
 
 ### What I learned
 
-- I wanted to have a bit of fun by flipping one of the site's ['Services' `section`](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page/#services)'s background images on its head. To achieve this, I had to leverage an absolutely-positioned [`::before` pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/::before). This pseudo-element's `transform` property was then used to perform the desired rotation:
+- I wanted to have a bit of fun by flipping one of the site's ['Services' `section`](https://loosenthedark.github.io/frontend-mentor_sunnyside-agency-landing-page/#services)'s background images on its head. To achieve this, I had to leverage an absolutely-positioned [`::before` pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/::before). This pseudo-element's `transform` property was used to perform the desired rotation:
 
-![](docs/images/screenshots/background-image-rotation-css-snippet.png)
+  ![](docs/images/screenshots/background-image-rotation-css-snippet.png)
 
 - This was only my second time building out a site incorporating CSS grid, so I found [Morten Rand-Hendriksen](https://twitter.com/mor10)'s [LinkedIn Learning course on this layout method](https://www.linkedin.com/learning/css-advanced-layouts-with-grid) to be an excellent primer. More specifically, his advice on using a [`@supports` CSS at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) to check for browser support before conditionally applying Grid styles was something I adhered to within the project's stylesheet:
 
-![](docs/images/screenshots/grid-browser-support-check-css-snippet.png)
+  ![](docs/images/screenshots/grid-browser-support-check-css-snippet.png)
 
 - I decided to detach the site's `nav` from its `.fixed-top` positioning on tablet and desktop, and instead use a dynamically-displayed 'back-to-top` button on vertical page scroll (> 500px) to aid navigation/UX:
 
-![](docs/images/screenshots/btn-back-to-top-js-snippet.png)
+  ![](docs/images/screenshots/btn-back-to-top-js-snippet.png)
 
 ### Continued development
 
