@@ -94,13 +94,13 @@ _(`jpeg` starter files provided in [Frontend Mentor challenge hub](https://www.f
 
   ![](docs/images/screenshots/grid-browser-support-check-css-snippet.png)
 
-- I decided to detach the site's `nav` from its `.fixed-top` positioning on tablet and desktop, and instead use a dynamically-displayed 'back-to-top` button on vertical page scroll (> 500px) to aid navigation/UX:
+- I decided to detach the site's `nav` from its `.fixed-top` positioning on tablet and desktop, and instead use a dynamically-displayed 'back-to-top' button on vertical page scroll (> 500px) to aid navigation/improve UX:
 
   ![](docs/images/screenshots/btn-back-to-top-js-snippet.png)
 
 ### Continued development
 
-At the time of writing (August 2021), the project's [custom stylesheet](static/css/style.css) contains over 1,500 lines of CSS. It is my intention to refactor and reduce the size of this file at a later date, most likely through targeted use of [CSS Variables](https://www.w3schools.com/css/css3_variables.asp). I will also look to slightly increase font-sizing throughout the site on tablet, as this is looking a bit on the small side at present.
+At the time of writing (August 2021), the project's [custom stylesheet](static/css/style.css) contains over 1,500 lines of CSS. It is my intention to refactor and reduce the size of this file at a later date, most likely through targeted use of [CSS Variables](https://www.w3schools.com/css/css3_variables.asp). I also plan on slightly increasing font-sizing throughout the site on tablet, as this is looking a bit on the small side at present.
 
 ### Useful resources
 
@@ -113,7 +113,7 @@ At the time of writing (August 2021), the project's [custom stylesheet](static/c
 - [PicResize (online image editing tool)](https://picresize.com/) was used to crop and resize images
 - [TinyJPG (online image compression tool)](https://tinyjpg.com/) was used for image compression
 - [Responsively App](https://responsively.app/) was used to capture video of scrollable device emulators showcasing this solution's responsive mobile-first layout
-- [Ezgif](https://ezgif.com/) was then used to convert this video to the `gif` format for inclusion in the [Screenshots](#screenshots) section of this Markdown file
+- [Ezgif](https://ezgif.com/) was then used to convert this video file to the `gif` format for inclusion in the [Screenshots](#screenshots) section of this Markdown file
 - [Ray.so:](https://ray.so/) was used to create the code block images featured in this Markdown file
 
 ## Developer
