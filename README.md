@@ -8,6 +8,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Design mockups](#design-mockups)
   - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
@@ -26,6 +27,35 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
+
+### Design mockups (`jpeg` starter files provided in Frontend Mentor challenge hub)
+
+#### Mobile design:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+
+![Sunnyside agency landing page mobile design mockup](docs/design-mockups/mobile-design.jpg)
+</details>
+
+#### Mobile menu detail:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+
+![Sunnyside agency landing page mobile menu detail mockup](docs/design-mockups/mobile-menu.jpg)
+</details>
+
+#### Desktop design:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+
+![Sunnyside agency landing page desktop design mockup](docs/design-mockups/desktop-design.jpg)
+</details>
 
 ### Screenshots
 
@@ -58,9 +88,13 @@ Users should be able to:
 
 ![](docs/images/screenshots/grid-browser-support-check-css-snippet.png)
 
+- I decided to detach the site's `nav` from its `.fixed-top` positioning on tablet and desktop, and instead use a dynamically-displayed 'back-to-top` button on vertical page scroll (> 500px) to aid navigation/UX:
+
+![](docs/images/screenshots/btn-back-to-top-js-snippet.png)
+
 ### Continued development
 
-At the time of writing (August 2021), the project's [custom stylesheet](static/css/style.css) contains over 1,500 lines of CSS. It is my intention to refactor and reduce the size of this file at a later date, most likely through targeted use of [CSS Variables](https://www.w3schools.com/css/css3_variables.asp)
+At the time of writing (August 2021), the project's [custom stylesheet](static/css/style.css) contains over 1,500 lines of CSS. It is my intention to refactor and reduce the size of this file at a later date, most likely through targeted use of [CSS Variables](https://www.w3schools.com/css/css3_variables.asp). I will also look to slightly increase font-sizing throughout the site on tablet, as this is looking a bit on the small side at present.
 
 ### Useful resources
 
